@@ -1,18 +1,37 @@
-# KungFuTrader 🥋
-基于截拳道哲学的轻量级量化交易回测框架
-
-## 核心理念
-- **以无法为有法**：灵活适配多种策略
-- **以无限为有限**：极简架构，易于扩展
-- **如水无形**：适配不同市场与品种
-
-## 快速开始
-```bash
-pip install -r requirements.txt
-python examples/jkd_trend_following.py
-
-kungfutrader/
-├── core/          # 回测引擎与策略基类
-├── data/          # 数据获取与预处理
-├── risk/          # 风险管理模块
-└── visualization/ # 结果可视化
+# KungFuTrader
+ 🥋 基于截拳道哲学的轻量级量化交易回测框架
+ A lightweight quantitative trading backtesting framework inspired by Jeet Kune Do.
+ ---
+ ## 项目介绍
+ KungFuTrader 是一个轻量级 Python 量化交易回测框架，
+ 内置趋势策略、回测引擎、收益计算、风险指标、资金曲线、交易记录，
+ 结构标准、可安装、可扩展、适合学习和实盘回测。
+ ---
+ ## 主要功能
+ - 回测引擎（收益、夏普比率、最大回撤）
+ - 双均线趋势策略（JKD截拳道风格）
+ - 资金曲线 & 交易记录
+ - 标准Python包结构
+ - 完整示例 + 单元测试
+ ---
+ ## 快速使用
+ # 安装
+ pip install -e .
+ # 运行示例
+ python examples/jkd_trend_following.py
+ # 运行测试
+ python run_tests.py
+ ---
+ ## 项目结构
+ KungFuTrader/
+ ├── kungfutrader/      # 核心代码
+ ├── examples/          # 示例代码
+ ├── tests/             # 测试代码
+ ├── setup.py           # 安装配置
+ └── README.md          # 项目说明
+ ---
+ ## 开源协议
+ MIT License
+ ---
+ ## GitHub 地址
+ https://github.com/KING2026960/KungFuTrader
